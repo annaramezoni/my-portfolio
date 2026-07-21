@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="mission01.css" />
+    <script src="https://kit.fontawesome.com/33e07c22c8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navbar, navigation menu -->
+    <nav class="navbar">
+        <ul class="navbar_list">
+            <li class="navbar_first-item">
+                <img class="my-avatar" src="./images/my-avatar-without-background.png" alt="avatar picture" />
+                <p class="my-name">Anna Ramezoni</p>
+            </li>
+                
+            <li class="navbar_items"><a href="#about">About</a></li>
+            <li class="navbar_items"><a href="#skills">Skills</a></li>
+            <li class="navbar_items"><a href="#education">Education</a></li>
+            <li class="navbar_items"><a aria-label="Open Anna's resume in a new tab" rel="noopener noreferrer" href="https://docs.google.com/document/d/1LYmpWvnE-hgTqoV5oBQMWhEO_XawLkQo/edit" target="_blank">Resume</a></li>
+            <li class="navbar_items"><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- social media -->
+        
+        <div class = "social-media">
+            <a href="https://linkedin.com/in/anna-ramezoni"><i class="fa-brands fa-2x fa-linkedin"></i></a>
+            <a href="https://github.com/annaramezoni"><i class="fa-brands fa-2x fa-github"></i></a>
+        </div>
+
+        
+    </nav>
+    <!-- main content -->
+    <main>
+        <!-- hero section -->
+        <section id="hero" class="hero-section">
+            <div>
+                <h1></h1>
+                
+            </div>
+        </section>
+        
+        <!-- about -->
+        <section id="about" class="section-container">
+            <h2 class="section-title">About</h2>
+            <p class="section-text">I am an aspiring Full-Stack Developer, former language teacher and kiwifruit orchard supervisor seeking to expand my horizons. <br />
+            With a strong curiosity for logic and a passion for continuous learning, I am building my technical skills to become a well-rounded Full-Stack Developer. I enjoy embracing new challenges and solving problems that help me grow both personally and professionally.</p>
+        </section>
+
+         <!-- skills -->
+        <section id="skills" class="section-container">
+            <h2 class="section-title">Skills</h2>
+            <ul class="skills-list">
+                <li class="skills-items">
+                    <i class="fa-brands fa-5x fa-html5"></i>
+                    <p class="section-text">HTML</p>
+                </li>
+                <li class="skills-items">
+                    <i class="fa-brands fa-5x fa-css3-alt"></i>
+                    <p class="section-text">CSS</p>
+                </li>
+                <li class="skills-items">
+                    <i class="fa-brands fa-5x fa-js"></i>
+                    <p class="section-text">Javascript</p>
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- education -->
+        <section id="education" class="section-container education">            
+            <h2 class="section-title">Education</h2>
+            <!-- latest course -->
+             <div class="education_card">
+                <div class="education_title-container">
+                    <img src="./images/Mission-Ready.png" alt="Mission Ready logo">
+                    <h4>Mission Ready</h4>
+                </div>
+                <p>
+                    Full Stack Developer Accelerator- jul/2026 – present
+                </p>
+            </div>
+
+            <!-- second course -->
+            <div class="education_card">
+                <div class="education_title-container">
+                    <img src="./images/UFRN-logo.png" alt="universtiy logo">
+                    <h4>Universidade Federal do Rio Grande do Norte</h4>
+                </div>
+                <p>
+                    Bachelor's degree of French Language - 2014 – 2017
+                </p>
+            </div>
+        </section>
+       
+        <section id="contact" class="section-container contact">
+            <h2 class="section-title">Contact</h2>          
+            <!--<a class="email-btn" href="mailto:anna.ramezoni@gmail.com">Click here to send me an email</a>
+            <p>or find me on my social media:</p> -->
+
+            <form class="contact_form" action="mailto:anna.ramezoni@gmail.com" method="post">
+                <div class="form_input-container"><label>Name:</label><input type="text" name="name" placeholder="Frodo Baggins"/> </div>
+                <div class="form_input-container"><label>Email:</label><input type="email" name="email" placeholder="frodobaggins@email.com"/> </div>
+                <div class="form_input-container form_message"><label>Message:</label><textarea placeholder="Type your message here"></textarea></div>
+
+                <input type="submit" value="Submit" />
+            </form>
+        </section>
+
+    </main>
+</body>
