@@ -70,7 +70,7 @@ body {
     background-color: var(--background-color-1);
 }
 
-.navbar_list > i {
+.navbar > i {
     display: none;
     color: var(--text-color-2);
     align-self: center;
@@ -190,6 +190,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: var(--text-color-1);
 }
 
 .form_input-container {
@@ -201,11 +202,27 @@ main {
     width: 85%;
     height: 1.5rem;
     border: none;
+    font-family: "Quicksand", sans-serif;
+    color: inherit;
 }
+
+.form_input-container textarea,
+.form_input-container input{
+    outline: none;
+    color: inherit;
+}
+
 .form_input-container textarea {
     border: none;
     min-height: 60px;
 }
+
+.contact_form input::placeholder, 
+.contact_form textarea::placeholder {
+    font-family: inherit;
+    color: #bdbdbd;
+}
+
 .form_message {
     flex-direction: column;
     gap: 5px;
